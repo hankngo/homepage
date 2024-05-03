@@ -1,13 +1,13 @@
 import React from 'react';
-import './styles/App.css'; // Adjust the path if necessary
-import Header from './components/layout/Header';
+import './styles/App.css'; 
 import logo from './assets/logo.svg';
+import Navbar from './components/layout/Navbar';
 
 
 function App() {
   return (
     <div className="App">
-      <Header />
+      <Navbar />
       {/* Other components will be added here */}
     </div>
   );
