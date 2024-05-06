@@ -1,3 +1,4 @@
+/* General styles for the navbar */
 .navbar {
   width: 100%;
   display: flex;
@@ -5,8 +6,24 @@
   align-items: center;
   background-color: #fff;
   color: grey;
+  position: relative; /* Needed for absolute positioning of children */
 }
 
+/* Style for the menu button */
+.menu-button {
+  display: none; /* Hidden by default, shown in media query for smaller screens */
+  background: none;
+  border: none;
+  color: grey;
+  font-size: 24px;
+  cursor: pointer;
+  position: absolute; /* Positioned relative to the navbar */
+  top: 10px; /* Consistent padding from the top */
+  left: 10px; /* Placed on the left */
+  z-index: 1050; /* Above all other content within the navbar */
+}
+
+/* Styles for the top part of the navbar */
 .navbar-top {
   width: 100%;
   display: flex;
@@ -17,12 +34,14 @@
   border-bottom: none;
 }
 
+/* Styling for text and logo in the navbar top */
 .navbar-top span,
 .navbar-bottom span {
-    font-weight: bolder;
-    color: #333;
+  font-weight: bolder;
+  color: #333;
 }
 
+/* Style for the bottom part of the navbar */
 .navbar-bottom {
   width: 100%;
   display: flex;
@@ -30,19 +49,21 @@
   align-items: center;
   padding: 15px 20px;
   background-color: #fff;
-  margin-top: 0;
 }
 
+/* Container for icons and links */
 .icons,
 .nav-links {
   display: flex;
-  gap: 40px;
+  gap: 40px; /* Spacing between icons and links */
 }
 
+/* Additional styling for icons */
 .icons {
-  padding-bottom: 5px;
+  padding-bottom: 5px; /* Small padding below the icons */
 }
 
+/* Styling for navigation links */
 .nav-links {
   list-style: none;
   display: flex;
@@ -51,6 +72,7 @@
   padding: 0;
 }
 
+/* Styling for individual navigation items */
 .nav-links li a,
 .icons i {
   color: grey;
@@ -58,6 +80,7 @@
   font-weight: bold;
 }
 
+/* Styles for the logo within the navbar */
 .logo .logo-link {
   display: flex;
   align-items: center;
@@ -73,4 +96,33 @@
   margin-left: 10px;
   color: grey;
   font-weight: bold;
+}
+
+/* Media queries for responsive adjustments */
+@media (max-width: 768px) {
+  .menu-button {
+    display: block; /* Show the menu button on smaller screens */
+  }
+
+  .nav-links {
+    position: fixed; /* Fix position to the viewport */
+    top: 0;
+    left: 0; /* Start from the left edge */
+    width: 250px; /* Width of the slide-out menu */
+    height: 100%; /* Full viewport height */
+    background-color: #333; /* Dark background for the slide-out menu */
+    flex-direction: column; /* Stack the links vertically */
+    transform: translateX(-100%); /* Start off-screen */
+    transition: transform 0.3s ease-in-out; /* Smooth transition for sliding in */
+  }
+
+  .nav-links.open {
+    transform: translateX(0); /* Slide in from the left */
+  }
+
+  /* Styling for navigation items in the slide-out menu */
+  .nav-links li a {
+    color: white; /* Light text color for better visibility on dark background */
+    padding: 15px; /* Larger clickable area for touch devices */
+  }
 }
