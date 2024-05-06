@@ -13,7 +13,7 @@ const Navbar = () => {
         <nav className="navbar">
             <div className="navbar-top">
                 <button className="menu-button" onClick={toggleNav}>
-                    <i className="fas fa-bars"></i>
+                    {isNavOpen ? <i className="fas fa-times"></i> : <i className="fas fa-bars"></i>}
                 </button>
                 <span>Official government website</span>
                 <div className="icons">

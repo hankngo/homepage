@@ -31,7 +31,7 @@
   align-items: center;
   padding: 15px 20px;
   background-color: #fff;
-  border-bottom: 1px solid #eee; /* Optional bottom border for visual separation */
+  border-bottom: none;
 }
 
 /* Styling for text and logo in the navbar top */
@@ -98,7 +98,7 @@
 }
 
 /* Media queries for responsive adjustments */
-@media (max-width: 768px) {
+@media (max-width: 860px) {
   .menu-button {
     display: block; /* Show the menu button on smaller screens */
   }
@@ -140,6 +140,6 @@
   }
 
   .logo {
-    padding-left: 50px;
+    padding-left: 38px;
   }
 }
