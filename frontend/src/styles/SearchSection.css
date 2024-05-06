@@ -1,0 +1,81 @@
+/* SearchSection.css */
+.search-section {
+  position: relative;
+  width: 100%;
+  height: 500px;
+}
+
+.search-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ensures the image covers the div without distorting */
+}
+
+.welcome-banner {
+  width: 100%;
+  background-color: #333; 
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+  font-size: 16px;
+}
+
+.welcome-banner a {
+  color: #79e47c; /* Green color for the link to make it stand out */
+  text-decoration: none;
+  padding-left: 5px;
+}
+
+.welcome-banner a:hover {
+  text-decoration: underline; 
+}
+
+.search-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  text-align: center;
+  width: auto;
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background for readability */
+  padding: 20px; /* Padding for better text spacing */
+  border-radius: 10px; /* Optional rounded corners */
+}
+
+.search-content h1 {
+  font-size: 36px; /* Larger font size for headline */
+  font-weight: bold; /* Bolder font for better visibility */
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7); /* Text shadow for depth */
+}
+
+.search-content p {
+  font-size: 24px; /* Larger font size for subtext */
+  margin-top: 10px; /* Space between headline and subtext */
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7); /* Text shadow for depth */
+}
+
+.search-box {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.search-box input {
+  padding: 10px;
+  width: 300px; /* Adjust width as needed */
+  border: none;
+  border-radius: 5px;
+  background-color: white; /* Ensures input box is visible */
+  color: black; /* Text color for input */
+}
+
+.search-box button {
+  padding: 10px;
+  border: none;
+  background-color: #4CAF50; /* Adjust button color as needed */
+  color: white;
+  cursor: pointer;
+  margin-left: 10px; /* Spacing between input and button */
+}
