@@ -5,14 +5,15 @@ const Navbar = () => {
     const [isNavOpen, setIsNavOpen] = useState(false);
 
     const toggleNav = () => {
-        setIsNavOpen(!isNavOpen); // Toggle the visibility of the nav drawer
+        setIsNavOpen(!isNavOpen);
+        document.body.classList.toggle('nav-open'); // Toggle 'nav-open' class on body
     };
 
     return (
         <nav className="navbar">
             <div className="navbar-top">
                 <button className="menu-button" onClick={toggleNav}>
-                    <i className="fas fa-bars"></i> {/* Ensure you have FontAwesome or similar */}
+                    <i className="fas fa-bars"></i>
                 </button>
                 <span>Official government website</span>
                 <div className="icons">

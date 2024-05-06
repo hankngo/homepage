@@ -31,7 +31,7 @@
   align-items: center;
   padding: 15px 20px;
   background-color: #fff;
-  border-bottom: none;
+  border-bottom: 1px solid #eee; /* Optional bottom border for visual separation */
 }
 
 /* Styling for text and logo in the navbar top */
@@ -47,7 +47,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 15px 20px;
+  padding: 5px 20px; /* Adjusted padding for smaller size */
   background-color: #fff;
 }
 
@@ -55,7 +55,7 @@
 .icons,
 .nav-links {
   display: flex;
-  gap: 40px; /* Spacing between icons and links */
+  gap: 20px; /* Spacing between icons and links */
 }
 
 /* Additional styling for icons */
@@ -66,10 +66,8 @@
 /* Styling for navigation links */
 .nav-links {
   list-style: none;
-  display: flex;
-  gap: 20px;
-  margin: 0;
-  padding: 0;
+  padding: 10px 0; /* Adjusted padding for smaller size */
+  overflow-y: auto; /* Add vertical scrollbar when content overflows */
 }
 
 /* Styling for individual navigation items */
@@ -78,6 +76,7 @@
   color: grey;
   text-decoration: none;
   font-weight: bold;
+  display: block; /* Ensure text is displayed vertically */
 }
 
 /* Styles for the logo within the navbar */
@@ -104,25 +103,43 @@
     display: block; /* Show the menu button on smaller screens */
   }
 
-  .nav-links {
-    position: fixed; /* Fix position to the viewport */
-    top: 0;
-    left: 0; /* Start from the left edge */
-    width: 250px; /* Width of the slide-out menu */
-    height: 100%; /* Full viewport height */
-    background-color: #333; /* Dark background for the slide-out menu */
-    flex-direction: column; /* Stack the links vertically */
-    transform: translateX(-100%); /* Start off-screen */
-    transition: transform 0.3s ease-in-out; /* Smooth transition for sliding in */
+  .navbar-top {
+    padding-left: 60px; /* Adjust padding to make space for the menu button */
   }
 
-  .nav-links.open {
+  .navbar-bottom {
+    display: none; /* Hide navbar-bottom by default */
+    width: 280px; /* Smaller width for the sidebar */
+    padding: 5px 10px; /* Adjusted padding for smaller size */
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    background-color: #ffffff;
+    z-index: 1049;
+    transform: translateX(-100%);
+    transition: transform 0.3s ease-in-out;
+  }
+
+  body.nav-open .navbar-bottom {
+    display: block; /* Show navbar-bottom when body has 'nav-open' class */
     transform: translateX(0); /* Slide in from the left */
   }
 
-  /* Styling for navigation items in the slide-out menu */
+  .nav-links {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    padding: 10px 0; /* Adjusted padding for smaller size */
+  }
+
   .nav-links li a {
-    color: white; /* Light text color for better visibility on dark background */
-    padding: 15px; /* Larger clickable area for touch devices */
+    color: grey;
+    text-decoration: none;
+    font-weight: bold;
+  }
+
+  .logo {
+    padding-left: 50px;
   }
 }
