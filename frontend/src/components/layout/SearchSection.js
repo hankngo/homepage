@@ -5,7 +5,7 @@ const SearchSection = () => {
   return (
     <div className="search-section">
       <div className="welcome-banner">
-        Welcome to our future website! <a href="#learn-more">Learn more</a>
+        Welcome to our future website! <a href="https://williamston-mi.us/welcome-to-our-new-website/">Learn more</a>
       </div>
       <img src="https://storage.googleapis.com/proudcity/williamstonmi/uploads/2024/01/IMG_1404_copy-min-2000x1333.jpeg" alt="Beautiful Williamston, MI" className="search-image" />
       <div className="search-content">
