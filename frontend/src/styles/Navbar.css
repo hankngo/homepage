@@ -79,6 +79,17 @@
   display: block; /* Ensure text is displayed vertically */
 }
 
+/* Modify hover effect */
+
+.nav-links li a{
+  padding: 15px 14px;
+}
+
+.nav-links li a:hover {
+  background-color: #990a33;
+  color: white;
+}
+
 /* Styles for the logo within the navbar */
 .logo .logo-link {
   display: flex;

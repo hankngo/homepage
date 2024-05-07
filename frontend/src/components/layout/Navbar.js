@@ -32,13 +32,13 @@ const Navbar = () => {
                     </a>
                 </div>
                 <ul className="nav-links">
-                    <li><a href="#government">Government</a></li>
-                    <li><a href="#services">Services</a></li>
-                    <li><a href="#community">Community</a></li>
-                    <li><a href="#businesses">Businesses</a></li>
-                    <li><a href="#events">Events/Meetings</a></li>
-                    <li><a href="#news">News</a></li>
-                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="https://williamston-mi.us/government/">Government</a></li>
+                    <li><a href="https://williamston-mi.us/services/">Services</a></li>
+                    <li><a href="https://williamston-mi.us/community/">Community</a></li>
+                    <li><a href="https://williamston-mi.us/businesses/">Businesses</a></li>
+                    <li><a href="https://williamston-mi.us/events/">Events/Meetings</a></li>
+                    <li><a href="https://williamston-mi.us/news/">News</a></li>
+                    <li><a href="https://williamston-mi.us/contact/">Contact</a></li>
                 </ul>
             </div>
         </nav>
