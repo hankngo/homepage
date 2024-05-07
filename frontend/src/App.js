@@ -5,7 +5,7 @@ import Navbar from './components/layout/Navbar';
 import SearchSection from './components/layout/SearchSection';
 import PopularServices from './components/layout/PopularServices';
 import GovernmentSection from './components/layout/GovernmentSection';
-
+import Footer from './components/layout/Footer';
 
 function App() {
   return (
@@ -14,7 +14,7 @@ function App() {
       <SearchSection />
       <PopularServices />
       <GovernmentSection />
-      {/* Other components will be added here */}
+      <Footer />
     </div>
   );
 }
