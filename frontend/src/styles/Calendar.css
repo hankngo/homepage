@@ -1,0 +1,69 @@
+.calendar-container {
+	width: 370px; /* Adjusted width */
+	margin: auto;
+	padding: 0;
+	background-color: #068d25; /* Green background */
+	border-radius: 5px;
+	padding: 10px;
+	color: white;
+	margin-top: 40px;
+}
+
+.header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-bottom: 10px;
+}
+
+.calendar {
+	width: 100%;
+	table-layout: fixed; /* Forces columns to have equal width */
+}
+
+	.calendar th, .calendar td {
+		border: 1px solid #ddd; /* Adds a light border to calendar cells */
+		background-color: #fff; /* White background for cells */
+		color: black; /* Black text for readability */
+		text-align: center; /* Centers text horizontally */
+		vertical-align: middle; /* Centers content vertically */
+		padding: 10px;
+		box-sizing: border-box; /* Includes padding and border in the element's total width and height */
+	}
+
+	.calendar th {
+		background-color: #28A745; /* Dark green for the header cells */
+		color: white;
+	}
+
+	.calendar td.empty {
+		background-color: #f9f9f9; /* Lighter background for empty cells */
+	}
+
+	.calendar td.has-event {
+		font-weight: bold;
+		text-decoration: underline; /* Underlines the date to indicate an event */
+		background-color: #f4f4f4; /* Slightly different background for event days */
+	}
+
+	.calendar td:hover {
+		background-color: #e0e0e0; /* Hover effect for cells */
+	}
+
+button {
+	background-color: #4CAF50; /* Green background for buttons */
+	border: none;
+	color: white;
+	padding: 8px 16px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16px;
+	margin: 4px 2px;
+	cursor: pointer;
+	border-radius: 4px;
+}
+
+	button:hover {
+		background-color: #45a049; /* Darker green on hover */
+	}
