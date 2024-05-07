@@ -3,6 +3,7 @@ import './styles/App.css';
 import logo from './assets/logo.svg';
 import Navbar from './components/layout/Navbar';
 import SearchSection from './components/layout/SearchSection';
+import PopularServices from './components/layout/PopularServices';
 
 
 function App() {
@@ -10,6 +11,7 @@ function App() {
     <div className="App">
       <Navbar />
       <SearchSection />
+      <PopularServices />
       {/* Other components will be added here */}
     </div>
   );
