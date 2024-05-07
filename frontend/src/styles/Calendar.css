@@ -50,7 +50,7 @@
 		background-color: #e0e0e0; /* Hover effect for cells */
 	}
 
-button {
+.calendar-button {
 	background-color: #4CAF50; /* Green background for buttons */
 	border: none;
 	color: white;
@@ -64,6 +64,6 @@ button {
 	border-radius: 4px;
 }
 
-	button:hover {
+	.calendar-button:hover {
 		background-color: #45a049; /* Darker green on hover */
 	}

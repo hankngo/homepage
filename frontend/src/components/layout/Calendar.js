@@ -87,9 +87,9 @@ function Calendar() {
     return (
         <div className="calendar-container">
             <div className="header">
-                <button onClick={() => setCurrentMonth(currentMonth - 1)}>&#10094;</button>
+                <button className="calendar-button" onClick={() => setCurrentMonth(currentMonth - 1)}>&#10094;</button>
                 <span>{monthNames[currentMonth]} {currentYear}</span>
-                <button onClick={() => setCurrentMonth(currentMonth + 1)}>&#10095;</button>
+                <button className="calendar-button" onClick={() => setCurrentMonth(currentMonth + 1)}>&#10095;</button>
             </div>
             <table className="calendar">
                 <thead>

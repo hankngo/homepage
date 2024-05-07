@@ -18,8 +18,8 @@
   font-size: 24px;
   cursor: pointer;
   position: absolute; /* Positioned relative to the navbar */
-  bottom: 0px; /* Adjusted for better alignment */
-  left: 0px; /* Placed on the left */
+  bottom: 10px; /* Adjusted for better alignment */
+  left: 10px; /* Placed on the left */
   z-index: 1050; /* Above all other content within the navbar */
 }
 
