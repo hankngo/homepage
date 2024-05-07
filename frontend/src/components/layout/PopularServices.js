@@ -1,5 +1,5 @@
 import React from 'react';
-import '../../styles/PopularServices.css'; // Ensure this is the correct path to your CSS file
+import '../../styles/PopularServices.css'; // Ensure this is the correct path
 
 function PopularServices() {
     const services = [
@@ -10,14 +10,18 @@ function PopularServices() {
     ];    
 
     return (
-        <div className="services-container">
-            <h2>Popular Services</h2>
-            {services.map(service => (
-                <div key={service.id} className="service-card">
-                    <i className={`fa ${service.icon} fa-3x`}></i>
-                    <div className="service-name">{service.name}</div>
-                </div>
-            ))}
+        <div className="container">
+            <div className="services-title">
+                <h2>Popular Services</h2>
+            </div>
+            <div className="services-container">
+                {services.map(service => (
+                    <div key={service.id} className="service-card">
+                        <i className={`fa ${service.icon} fa-3x`}></i>
+                        <div className="service-name">{service.name}</div>
+                    </div>
+                ))}
+            </div>
         </div>
     );
 }
